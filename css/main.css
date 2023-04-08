@@ -42,17 +42,6 @@ h2{
 
 /* 2.Header */
 
-#m-logo-hero {
-    height: 91px;
-}
-
-.m-h2-text {
-    grid-column: 1/-1;
-    text-align: center;
-    font-size: 33px;
-    color: #fff;
-}
-
 #m-main-header1 {
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/drnut-image1.jpg);
     height: 492px;
@@ -61,11 +50,10 @@ h2{
 #m-logo {
     height: 91px;
     margin-top: 34px;
-    grid-row: 1/2;
+    grid-column: 1/3;
 }
 
 #m-main-nav {
- 
     text-align: right;
     margin-top: 26px;}
 
@@ -137,14 +125,6 @@ h2{
         position: relative;
         cursor: pointer;
         transition: 1s;
-    }
-    
-    .button-text {
-        font-size: 12px;
-        padding: 0px;
-        padding-top: 16px;
-        margin: 0px;
-        color: #fff;
     }
     
     .button-text1 {
@@ -507,12 +487,12 @@ h2{
 
 /* Mobile Contact page */
 
-/* .m-h2-text {
-    grid-column: 1/-1;
+.m-h2-text {
     text-align: center;
     font-size: 33px;
     color: #fff;
-}  */
+    margin: 0;
+} 
 
 #m-main-header {
     display: grid;
@@ -520,89 +500,8 @@ h2{
     height: 492px;
 }
 
-#m-main-header1 {
-    display: grid;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/drnut-image1.jpg);
-    height: 492px;
-}
-
-/* #m-main-header a img {
-    width: 174px;
-    height: 91px;
-    margin-top: 34px;
-    grid-column: 1/3;
-    grid-row: 1/2;
-} */
-
-#m-logo-hero {
-    width: 174px;
-    height: 91px;
-}
-
-#m-logo {
-    width: 174px;
-    height: 91px;
-    margin-top: 34px;
-    grid-column: 1/3;
-    grid-row: 1/2;
-}
-
-
-
 #m-main-nav {
-    grid-column: 1/5;
-    grid-row: 1/2;
-    text-align: right;
     margin-top: 55px;
-}
-
-#m-main-nav label img {
-    width: 20px;
-    height: 20px;
-    transition: all .3s ease;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    
-}
-
-#m-main-nav input, #burger-con {
-    display: none;
-}
-
-#m-main-nav input:checked ~ #burger-con {
-    display: contents;
-    background-color: blue;
-}
-
-#m-main-nav input:checked ~ label img {
-    transform: rotate(90deg);
-}
-
-#m-main-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-#m-main-nav li a {
-    display: block;
-    padding: 10px 0 10px 0;
-    text-align: center;
-    color: #fff;
-    text-decoration: none;
-}
-
-#m-main-nav li {
-    border-bottom: 1px solid #efefef;
-}
-
-#m-main-nav li:first-child {
-    border-top: 1px solid #efefef;
-}
-
-#m-main-nav li:last-child {
-    margin-bottom: 10px;
 }
 
 /* --- 4. Location --- */
@@ -615,6 +514,7 @@ h2{
 
 #m-contact-col h5{
     font-size: 24px;
+    margin: 0;
 }
 
 #m-contact-col p{
@@ -665,13 +565,13 @@ h2{
     margin-bottom: 10px;
     color: #f44336;
 }
-/* #m-textarea {
-    width: 100%;
+#m-textarea {
+    width: 91.5%;
     padding: 15px;
     margin-bottom: 17px;
     outline: none;
     border: 1px solid #ccc;
-} */
+}
 
 input {
     width: 91.5%;
@@ -685,7 +585,6 @@ input {
 }
 
 .m-hero-btn {
-    grid-column: 1/3;
     text-decoration: none;
     color: #fff;
     border: 1px solid #fff;
@@ -744,6 +643,7 @@ button {
     color: #f44336;
 }
 
+/* Tablet view */
 
 @media screen and (min-width: 768px) {
     #m-main-header1 {
@@ -1192,7 +1092,164 @@ button {
     
 }
 
+/* Contact Page */
+
+
+.m-h2-text {
+    text-align: center;
+    font-size: 33px;
+    color: #fff;
+    margin: 0;
+} 
+
+#m-main-header {
+    display: grid;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/drnut-image2.jpg);
+    height: 492px;
 }
+
+/* --- 4. Location --- */
+
+#m-contact-col, h5 p{
+    grid-column: 1/5;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+#m-contact-col h5{
+    font-size: 24px;
+    margin: 0;
+}
+
+#m-contact-col p{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+#contact-col h5{
+    font-size: 33px;
+}
+
+#contact-col p{
+    margin-top: 10px;
+    font-size: 23px;
+}
+
+#m-contact-col div .fa{
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+#m-contact-us {
+    display: grid;
+    text-align: left;
+    grid-column: 1/-1;
+}
+
+.box1 {
+    margin-top: 10px;
+    margin-bottom: 43px;
+}
+
+#m-row {
+    grid-column: 1/5;
+}
+
+.fa1 {
+    display: inline-block;
+    font: normal normal normal 77px/1 FontAwesome;
+    font-size: 50px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* height: 29px; */
+    /* width: 26px; */
+    margin-bottom: 10px;
+    color: #f44336;
+}
+#m-textarea {
+    width: 91.5%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+input {
+    width: 91.5%;
+}
+
+#m-row input, #m-contact-col textarea{
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.m-hero-btn {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.button-text {
+    font-size: 12px;
+    padding: 0px;
+    padding-top: 16px;
+    margin: 0px;
+    color: #fff;
+}
+
+.button-text1 {
+    font-size: 12px;
+    padding: 0px;
+    padding-top: 6px;
+    margin: 0px;
+    color: #fff;
+}
+
+.m-hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+}
+
+.m-hero-btn.red-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    color: #fff;
+}
+
+.m-hero-btn.red-btn {
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+}
+
+button {
+    outline: red;
+}
+
+#icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+#fa-heart-o{
+    color: #f44336;
+}
+
+}
+
+/* Desktop view */
 
 @media screen and (min-width: 1920px) {
 
