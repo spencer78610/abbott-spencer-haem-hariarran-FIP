@@ -307,6 +307,7 @@ h2{
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
+    cursor: pointer;
 }
 
 #m-selling-col2{
@@ -315,6 +316,8 @@ h2{
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
+        cursor: pointer;
+
 }
 
 #m-selling-col3{
@@ -323,12 +326,20 @@ h2{
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
+    cursor: pointer;
 }
 
 .image {
     width: 100%;
     border-radius: 20px;
 }
+
+#beer-text {
+    grid-column: 1/-1;
+    display: none;
+}
+
+
 
 /* Testimonials */
 
@@ -998,7 +1009,7 @@ button {
 }
 
 .sell-text {
-    font-size: 14px;
+    font-size: 20px;
     line-height: 20px;
 }
 
@@ -1012,7 +1023,7 @@ button {
 }
 
 #m-selling h3 {
-    font-size: 14px;
+    font-size: 28px;
     margin-top: 18px;
     margin-bottom: 18px;
     font-weight: 700;
@@ -1545,8 +1556,8 @@ button {
     }
     
     .sell-text {
-        font-size: 27px;
-        line-height: 36px;
+        font-size: 50px;
+        line-height: 46px;
     }
     
     #m-selling h2{
@@ -1555,7 +1566,7 @@ button {
     }
     
     #m-selling h3 {
-        font-size: 35px;
+        font-size: 65px;
     }
     
     #m-selling-col1{
