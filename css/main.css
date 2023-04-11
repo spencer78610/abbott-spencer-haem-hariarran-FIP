@@ -1224,7 +1224,7 @@ button {
 
 #m-main-header {
     display: grid;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/background.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/banner2.jpg);
     height: 492px;
 }
 
